@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.13.5 on win32)" generated="2026-09-14T21:45:14.568623" rpa="false" schemaversion="5">
+<suite id="s1" name="Basic Syntax" source="C:\Users\tusum\OneDrive\Desktop\Python-Automation-Lab-and-Capstone\01_Initial_Lab_Work\04_Robot_Framework\Assignment_13_Robot_Framework_Basic_Syntax_and_Keywords\Source_Code\basic_syntax.robot">
+<test id="s1-t1" name="Open Website And Login" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-14T21:45:14.799565" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-14T21:45:14.784808" elapsed="2.842845"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-14T21:45:17.628311" elapsed="0.506002"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T21:45:18.157659" level="INFO">Current page contains element 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-09-14T21:45:18.135250" elapsed="0.023640"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T21:45:18.164797" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T21:45:18.162832" elapsed="0.339127"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T21:45:18.505121" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T21:45:18.503356" elapsed="0.147344"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-14T21:45:18.652727" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T21:45:18.652017" elapsed="0.125774"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=inventory_container</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T21:45:18.779211" elapsed="0.278984"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-14T21:45:19.114356" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-14T21:45:19.059652" elapsed="0.055178"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-14T21:45:19.118952" level="INFO">SauceDemo login and page verification completed successfully.</msg>
+<arg>SauceDemo login and page verification completed successfully.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-14T21:45:19.117064" elapsed="0.002101"/>
+</kw>
+<status status="PASS" start="2026-09-14T21:45:14.784001" elapsed="4.337992"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-14T21:45:19.128604" elapsed="2.398942"/>
+</kw>
+<status status="PASS" start="2026-09-14T21:45:14.570941" elapsed="6.956724"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Basic Syntax" id="s1" pass="1" fail="0" skip="0">Basic Syntax</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

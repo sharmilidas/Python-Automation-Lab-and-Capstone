@@ -1,0 +1,1 @@
+Assignment 02 – Synchronization & Explicit Waits\n\nSource code: Source_Code/synchronization_explicit_waits.py\nReport: Assignment_Report.pdf\nScreenshots: Source_Code/Screenshots/\n\nRun from the assignment folder:\npython Source_Code\\synchronization_explicit_waits.py\n

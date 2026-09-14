@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.13.5 on win32)" generated="2026-09-14T22:01:27.306326" rpa="false" schemaversion="5">
+<suite id="s1" name="Custom Keywords" source="C:\Users\tusum\OneDrive\Desktop\Python-Automation-Lab-and-Capstone\01_Initial_Lab_Work\04_Robot_Framework\Assignment_15_Robot_Framework_Custom_Keywords_and_Libraries\Source_Code\custom_keywords.robot">
+<test id="s1-t1" name="Custom Keywords Login Test" line="7">
+<kw name="Open SauceDemo Application" owner="saucedemo_keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:01:27.591514" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-09-14T22:01:27.591322" elapsed="2.634838"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.226765" elapsed="0.086580"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=user-name</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.313897" elapsed="0.043555"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:01:27.590479" elapsed="2.767177"/>
+</kw>
+<kw name="Login To SauceDemo" owner="saucedemo_keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:01:30.365901" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>id=user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.365250" elapsed="0.257723"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:01:30.624911" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.623722" elapsed="0.110217"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:01:30.735201" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>id=login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.734531" elapsed="0.070432"/>
+</kw>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2026-09-14T22:01:30.361525" elapsed="0.443533"/>
+</kw>
+<kw name="Verify Successful Login" owner="saucedemo_keywords">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=inventory_container</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.805933" elapsed="0.057134"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:01:30.884021" level="INFO">Current page contains text 'Products'.</msg>
+<arg>Products</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.863276" elapsed="0.020988"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:01:30.805562" elapsed="0.079011"/>
+</kw>
+<kw name="Logout From SauceDemo" owner="saucedemo_keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:01:30.895278" level="INFO">Clicking button 'id=react-burger-menu-btn'.</msg>
+<arg>id=react-burger-menu-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:01:30.894550" elapsed="0.384076"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=logout_sidebar_link</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-09-14T22:01:31.279119" elapsed="0.714528"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-09-14T22:01:31.995689" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
+<arg>id=logout_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-09-14T22:01:31.994983" elapsed="0.086986"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>id=login-button</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2026-09-14T22:01:32.082336" elapsed="0.017464"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:01:30.890037" elapsed="1.210130"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:01:27.589916" elapsed="4.511383"/>
+</test>
+<kw name="Close SauceDemo Application" owner="saucedemo_keywords" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-09-14T22:01:32.103479" elapsed="2.472673"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:01:32.103253" elapsed="2.473087"/>
+</kw>
+<status status="PASS" start="2026-09-14T22:01:27.307769" elapsed="7.268628"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Custom Keywords" id="s1" pass="1" fail="0" skip="0">Custom Keywords</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,5 @@
+*** Test Cases ***;${username};${password};${expected_result}
+TC01 Valid Login;standard_user;secret_sauce;success
+TC02 Invalid Username;wrong_user;secret_sauce;failure
+TC03 Invalid Password;standard_user;wrong_password;failure
+TC04 Invalid Username And Password;wrong_user;wrong_password;failure

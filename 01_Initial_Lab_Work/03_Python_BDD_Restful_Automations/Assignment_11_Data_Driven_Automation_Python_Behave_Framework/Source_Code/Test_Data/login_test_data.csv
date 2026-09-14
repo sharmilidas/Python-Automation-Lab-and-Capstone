@@ -1,0 +1,5 @@
+test_case,username,password,expected_result
+TC01,standard_user,secret_sauce,success
+TC02,wrong_user,wrong_pass,failure
+TC03,standard_user,wrong_pass,failure
+TC04,wrong_user,secret_sauce,failure

@@ -1,0 +1,21 @@
+# Environment variables
+Source_Code/.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# PyTest
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
