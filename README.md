@@ -1,15 +1,4 @@
-Got it — you want something **in between**: not a huge documentation file, but also **not too short**. It should look like a proper college/project GitHub README, with the full assignment structure clearly explained.
 
-Use this as your root `README.md`:
-
-````markdown
-# 🐍 Python Automation Lab & Capstone Project
-
-<p align="center">
-  <b>Python • Selenium • PyTest • Behave • Robot Framework • BDD • POM</b>
-</p>
-
----
 
 ## 👩‍🎓 Student Details
 
