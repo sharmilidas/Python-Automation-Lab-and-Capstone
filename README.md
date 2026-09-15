@@ -13,22 +13,18 @@
 
 ## 📌 About the Repository
 
-This repository contains my complete **Python Automation Testing Laboratory
-Assignments and Capstone Project**.
+This repository contains my complete **Python Automation Testing Laboratory Assignments and Capstone Project**.
 
-The work covers the journey from basic Selenium web automation to the
-development of structured automation frameworks using **PyTest, Unittest,
-Behave BDD, and Robot Framework**.
+The work covers the journey from basic Selenium web automation to the development of structured automation frameworks using **PyTest, Unittest, Behave BDD, and Robot Framework**.
 
-Each assignment is organized separately with its source code, supporting
-files, execution evidence, reports, and documentation wherever applicable.
+Each assignment is organized separately with its source code, supporting files, execution evidence, reports, and documentation wherever applicable.
 
-The repository is divided into three main sections:
+The repository is divided into four main sections:
 
-1. **Initial Lab Work** – Assignments 1–15 covering Selenium, testing
-   frameworks, BDD/Behave and Robot Framework.
+1. **Initial Lab Work** – Assignments 1–15 covering Selenium, testing frameworks, BDD/Behave and Robot Framework.
 2. **Capstone Project** – A complete Selenium Python automation framework.
 3. **Certificates** – Certificates related to the completed coursework/training.
+4. **Video Links** – Contains links to video demonstrations of the completed automation laboratory work, hosted on Google Drive.
 
 ---
 
