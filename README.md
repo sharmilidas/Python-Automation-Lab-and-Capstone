@@ -24,7 +24,7 @@ The repository is divided into four main sections:
 1. **Initial Lab Work** – Assignments 1–15 covering Selenium, testing frameworks, BDD/Behave and Robot Framework.
 2. **Capstone Project** – A complete Selenium Python automation framework.
 3. **Certificates** – Certificates related to the completed coursework/training.
-4. **Video Links** – Contains links to video demonstrations of the completed automation laboratory work, hosted on Google Drive.
+4. **Video Links** – Contains links to video demonstrations of the completed automation laboratory work, hosted on Google Drive,inside video_links folder.
 
 ---
 
@@ -49,13 +49,15 @@ The repository is divided into four main sections:
 
 # 📂 Repository Structure
 
+## 📂 Repository Structure
+
 ```text
 Python-Automation-Lab-and-Capstone/
 │
 ├── 01_Initial_Lab_Work/
-│
+│   │
 │   ├── 01_Automation_with_Selenium/
-│   │   ├── Assignment_01_The_Multi-Locator_Challenge/
+│   │   ├── Assignment_01_The_Multi_Locator_Challenge/
 │   │   ├── Assignment_02_Synchronization_and_Explicit_Waits/
 │   │   ├── Assignment_03_Dynamic_Dropdowns_and_Checkboxes/
 │   │   ├── Assignment_04_JavaScript_Alerts_and_Confirms/
@@ -72,26 +74,35 @@ Python-Automation-Lab-and-Capstone/
 │   │   ├── Assignment_11_Data_Driven_Automation_Python_Behave_Framework/
 │   │   └── Assignment_12_Selenium_POM_Python_Behave_Framework/
 │   │
-│   └── 04_Robot_Framework/
-│       ├── Assignment_13_Robot_Framework_Basic_Syntax_and_Keywords/
-│       ├── Assignment_14_Robot_Framework_Variables_and_Data_Driven_Automation/
-│       └── Assignment_15_Robot_Framework_Custom_Keywords_and_Libraries/
+│   ├── 04_Robot_Framework/
+│   │   ├── Assignment_13_Robot_Framework_Basic_Syntax_and_Keywords/
+│   │   ├── Assignment_14_Robot_Framework_Variables_and_Data_Driven_Automation/
+│   │   └── Assignment_15_Robot_Framework_Custom_Keywords_and_Libraries/
+│   │
+│   └── Video_links/
+│       └── README.md
 │
 ├── 02_Capstone_Project/
-│
+│   ├── Demonstration/
+│   ├── Project_Report/
+│   ├── Reports/
+│   ├── Screenshots/
 │   ├── Source_Code/
+│   │   ├── config/
+│   │   ├── data/
+│   │   ├── pages/
+│   │   ├── tests/
+│   │   │   └── unittest/
+│   │   └── utils/
 │   ├── Test_Cases/
 │   ├── Test_Data/
-│   ├── Screenshots/
-│   ├── Reports/
-│   ├── Demonstration/
-│   └── Project_Report/
+│   └── Video_demonstration_link/
+│       └── README.md
 │
 ├── 03_Certificates/
 │
 ├── .gitignore
 └── README.md
-````
 
 ---
 

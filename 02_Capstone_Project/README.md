@@ -115,58 +115,38 @@ The primary objectives of this project are:
 
 # 📂 Project Structure
 
+## 📂 Capstone Project Structure
+
 ```text
 02_Capstone_Project/
 │
-├── 📁 Demonstration/
+├── Demonstration/
 │
-├── 📁 Project_Report/
+├── Project_Report/
 │   └── Selenium_Python_Capstone_Project_Report.pdf
 │
-├── 📁 Reports/
+├── Reports/
 │   └── pytest_report.html
 │
-├── 📁 Screenshots/
+├── Screenshots/
 │
-├── 📁 Source_Code/
-│   │
-│   ├── 📁 config/
-│   │   └── config.py
-│   │
-│   ├── 📁 data/
-│   │   └── test_data.py
-│   │
-│   ├── 📁 pages/
-│   │   ├── home_page.py
-│   │   ├── login_page.py
-│   │   ├── register_page.py
-│   │   ├── product_page.py
-│   │   └── account_page.py
-│   │
-│   ├── 📁 tests/
-│   │   ├── test_registration.py
-│   │   ├── test_login.py
-│   │   ├── test_product_search.py
-│   │   ├── test_add_to_cart.py
-│   │   ├── test_cart_validation.py
-│   │   ├── test_logout.py
-│   │   │
-│   │   └── 📁 unittest/
-│   │       └── test_product_search_unittest.py
-│   │
-│   ├── 📁 utils/
-│   │
+├── Source_Code/
+│   ├── config/
+│   ├── data/
+│   ├── pages/
+│   ├── tests/
+│   │   └── unittest/
+│   ├── utils/
 │   ├── conftest.py
 │   ├── pytest.ini
 │   └── requirements.txt
 │
-├── 📁 Test_Cases/
-│   └── Capstone_Test_Cases.md
+├── Test_Cases/
 │
-├── 📁 Test_Data/
+├── Test_Data/
 │
-└── README.md
-```
+└── Video_demonstration_link/
+    └── README.md
 
 ---
 
